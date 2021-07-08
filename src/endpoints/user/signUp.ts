@@ -30,7 +30,6 @@ export default async function signUp (req: Request, res: Response): Promise<void
                 password: cypherPassword
             })
 
-
         const token = generateToken({id})
 
         res.status(201).send({token})

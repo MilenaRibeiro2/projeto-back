@@ -7,6 +7,6 @@ import getMusicById from './endpoints/music/getMusicById'
 
 app.get('/music/all', getMusic)
 app.get('/music/:id', getMusicById)
-app.post('/users/signUp', signUp)
-app.post('/users/login', login)
+app.post('/user/signup', signUp)
+app.post('/user/login', login)
 app.post('/music', createMusic)
